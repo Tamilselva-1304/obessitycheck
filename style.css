@@ -1,0 +1,111 @@
+ @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap"); 
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    min-height: 100vh;
+    height: 150px;
+    background: url("https://c8.alamy.com/comp/EM2YAP/acronym-bmi-body-mass-index-conceptual-image-with-yellow-paint-line-EM2YAP.jpg");
+    background-size: cover ;
+    font-family: 'Nunito', sans-serif;
+    background-repeat: no-repeat;
+}
+.container{
+    position: absolute;
+    right: 0;
+     padding: 5px; 
+    top: 10%;
+    transform: translate(-5%,0%);
+}
+.box{
+    min-width: 400px;
+    background: #FAFAFA;
+    border-radius: 35px;
+    text-align: center;
+    position: relative;
+    margin-bottom: 40px;
+}
+.box::before{
+    content: "";
+    position: absolute;
+    height: 110%;
+    width: 110%;
+    left: -5%;
+    top: -5%;
+    background-color: rgba(255,255,255,0.3);
+    box-shadow: 0px 0px 166px -31px rgba(0,0,0,0.15);
+    border-radius: 60px;
+    z-index: -1;
+}
+h1{
+    font-weight: bold;
+    font-size: 36px;
+    padding: 30px 0;
+}
+.content{
+    padding:0 40px ;
+}
+.input{
+    background: #fff;
+    box-shadow: 0px 0px 95px -30px rgba(0,0,0,0.15);
+    border-radius: 28px;
+    padding: 20px 0;
+    margin-bottom: 20px;
+}
+.input label{
+    display: block;
+    font-size: 18px;
+    font-weight: 600;
+    color: #000;
+    margin-bottom: 20px;
+}
+.input input{
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #4f7df9;
+    width: 60%;
+    text-align: center;
+    font-size: 28px;
+    font-family: "Nunito",sans-serif;
+}
+button#Calculate{
+    font-family: "Nunito",sans-serif;
+    color:#FFF;
+    background-color:#4f7df9;
+    font-size: 16px;
+    border-radius: 12px;
+    padding: 12px 0;
+    width: 100%;
+    outline: none;
+    border: none;
+    transition: background 0.2s ease;
+}
+button#Calculate:hover{
+    background: #0044ff;
+}
+.result {
+    padding: 30px 20px;
+}
+.result p {
+    font-weight: 600;
+    font-size: 22px;
+    color: #000;
+    margin-bottom: 15px;
+}
+.result #result{
+    font-size: 36px;
+    font-weight: 900;
+    color: #4f7df9;
+    background-color: #e3e3e3;
+    display: inline-block;
+    padding: 7px 20px;
+    border-radius: 55px;
+    margin-bottom: 25px;
+}
+#comment{
+    color: #4f7df9;
+    font-weight: 800;
+}
